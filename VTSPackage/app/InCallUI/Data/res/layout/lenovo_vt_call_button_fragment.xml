@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vtCallButtonContainer" android:background="@color/incall_call_screen_vt_color" android:paddingLeft="@dimen/vt_incall_screen_button_margin_out" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/vt_incall_screen_button_interval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/vtCallButtonFirstRow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ToggleButton android:textColor="@color/incall_btn_color" android:id="@id/VTSpeaker" android:layout_height="fill_parent" android:drawableTop="@drawable/btn_compound_audio_vt" android:contentDescription="@string/onscreenAudioText" style="@style/InCallVTButton" />
+        <ToggleButton android:textColor="@color/dialpad_btn_color" android:id="@id/VTMute" android:layout_height="fill_parent" android:textOn="@string/onscreenMuteText" android:textOff="@string/onscreenMuteText" android:drawableTop="@drawable/btn_compound_mute_vt" android:contentDescription="@string/onscreenMuteText" style="@style/InCallVTButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/vtCallButtonSecondRow" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ToggleButton android:textColor="@color/dialpad_btn_color" android:id="@id/VTDialpad" android:layout_height="fill_parent" android:textOn="@string/onscreenHideDialpadText" android:textOff="@string/onscreenShowDialpadText" android:drawableTop="@drawable/btn_dialpad_vt" android:contentDescription="@string/onscreenShowDialpadText" style="@style/InCallVTButton" />
+        <ToggleButton android:id="@id/VTSwapVideo" android:layout_height="fill_parent" android:textOn="@string/onscreenSwapCallsText" android:textOff="@string/onscreenSwapCallsText" android:drawableTop="@drawable/btn_compound_swap_video_vt" android:contentDescription="@string/vt_swap_video" style="@style/InCallVTButton" />
+        <ToggleButton android:textColor="@color/incall_btn_color" android:id="@id/VTOverflowMenu" android:layout_height="fill_parent" android:textOn="@string/onscreenMenuText" android:textOff="@string/onscreenMenuText" android:drawableTop="@drawable/ic_menu_overflow" style="@style/InCallVTButton" />
+    </LinearLayout>
+</LinearLayout>

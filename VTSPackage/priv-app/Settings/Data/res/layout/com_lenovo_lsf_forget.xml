@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.lsf.account.view.KeyboardLayout android:orientation="vertical" android:id="@id/forget_keyboardLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/forget_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/com_lenovo_lsf_layout_loc">
+                <TextView android:id="@id/forget_text_findpassword" android:text="@string/com_lenovo_lsf_forget_string_findpassword" style="@style/com_lenovo_lsf_head_text" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/APKTOOL_DUMMY_0040" android:scaleType="fitXY" />
+            <LinearLayout android:layout_marginTop="10.0dip" style="@style/com_lenovo_lsf_layout_loc">
+                <TextView android:id="@id/forget_text_findpasswordinfo" android:text="@string/com_lenovo_lsf_forget_string_findpasswordinfo" style="@style/com_lenovo_lsf_detail_text" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/forget_layout_error" android:paddingTop="10.0dip" style="@style/com_lenovo_lsf_layout_loc">
+                <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/forget_text_error" android:background="#ffffa200" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/com_lenovo_lsf_text_size_small" />
+            </LinearLayout>
+            <LinearLayout android:paddingTop="0.0dip" style="@style/com_lenovo_lsf_layout_loc">
+                <RelativeLayout style="@style/com_lenovo_lsf_input_area">
+                    <TextView android:id="@id/forget_text_account" android:text="@string/com_lenovo_lsf_login_string_account" style="@style/com_lenovo_lsf_input_text" />
+                    <EditText android:id="@id/forget_edit_account" android:hint="@string/com_lenovo_lsf_login_string_accounthint" android:layout_toRightOf="@id/forget_text_account" style="@style/com_lenovo_lsf_input_edit" />
+                </RelativeLayout>
+                <RelativeLayout style="@style/com_lenovo_lsf_input_area">
+                    <TextView android:id="@id/forget_text_verifycode" android:text="@string/com_lenovo_lsf_register_string_verifycode" style="@style/com_lenovo_lsf_input_text" />
+                    <EditText android:id="@id/forget_edit_verifycode" android:hint="@string/com_lenovo_lsf_register_string_verifycodehint" android:layout_toRightOf="@id/forget_text_verifycode" android:inputType="number" style="@style/com_lenovo_lsf_input_edit" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:paddingTop="0.0dip" style="@style/com_lenovo_lsf_layout_loc">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/forget_image_verify" android:layout_width="120.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" />
+                    <ImageButton android:id="@id/forget_button_changeanother" android:background="@drawable/APKTOOL_DUMMY_0030" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_toRightOf="@id/forget_image_verify" style="@style/com_lenovo_lsf_button_style" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="20.0dip" style="@style/com_lenovo_lsf_bottom">
+                <Button android:id="@id/forget_button_reset" android:text="@string/com_lenovo_lsf_forget_string_reset" style="@style/com_lenovo_lsf_button_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.lenovo.lsf.account.view.KeyboardLayout>

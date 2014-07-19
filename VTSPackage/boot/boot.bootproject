@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtuousTenProject>
+  <Settings>
+    <Setting Name="binaryname" Value="boot.img" />
+    <Setting Name="version" Value="4" />
+    <Setting Name="hassuccessfulimport" Value="True" />
+    <Setting Name="activeconfiguration" Value="Jack of all trades" />
+  </Settings>
+  <OpenDocuments />
+  <MarkedLines />
+  <ScriptConfigurations>
+    <ScriptConfiguration ConfigurationName="Jack of all trades" Description="Handles all necessary tasks" Type="Boot" ID="8FCB7ED2-656B-4A7B-A28D-B156D153B7C0" SortOrder="1">
+      <Import SyncWith="Build">
+        <VariableModule Name="TmpImportDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <UnpackKernelModule ImageFile="$(ImportBinaryPath)" OutputDirectory="$(TmpImportDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CleanupModule TargetDirectory="$(DataDirectory)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(TmpImportDir)" TargetDirectory="$(DataDirectory)" IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Import>
+      <Build>
+        <VariableModule Name="TmpBuildDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(DataDirectory)" TargetDirectory="$(TmpBuildDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CheckRamdiskModule DataDirectory="$(TmpBuildDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <PackKernelModule DataDirectory="$(TmpBuildDir)" OutputImageFile="$(BinaryDirectory)\$(BinaryName)" IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Build>
+      <Push>
+        <MessageBoxModule Title="Not supported!" Text="The Boot project doesn't support pushing. Please use the regular method for transfering boot images to your device." IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Push>
+    </ScriptConfiguration>
+  </ScriptConfigurations>
+</VirtuousTenProject>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_tether_apndata">SaskTel Tethering,inet.stm.sk.ca,,,,,,,,,302,780,,DUN</string>
+    <item type="string" name="APKTOOL_DUMMY_0643">false</item>
+    <item type="string" name="APKTOOL_DUMMY_0644">false</item>
+</resources>

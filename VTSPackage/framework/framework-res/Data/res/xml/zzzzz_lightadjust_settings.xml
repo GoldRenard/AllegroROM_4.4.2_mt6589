@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/zzzzz_lightadjust_preference_general_settings">
+        <ListPreference android:entries="@array/zzzzz_lightadjust_general_preference_profile_entries" android:title="@string/zzzzz_lightadjust_preference_profile_select_lable" android:key="profile_selection" android:summary="@string/zzzzz_lightadjust_preference_profile_select_lable_summary" android:defaultValue="Daytime" android:dialogTitle="@string/zzzzz_lightadjust_preference_profile_select_lable" android:entryValues="@array/zzzzz_lightadjust_general_preference_profile_values" />
+        <ListPreference android:entries="@array/zzzzz_lightadjust_general_preference_policy_entries" android:title="@string/zzzzz_lightadjust_preference_policy_select_lable" android:key="policy_selection" android:summary="@string/zzzzz_lightadjust_preference_policy_select_lable_summary" android:defaultValue="Auto" android:dialogTitle="@string/zzzzz_lightadjust_preference_policy_select_lable" android:entryValues="@array/zzzzz_lightadjust_general_preference_policy_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/zzzzz_lightadjust_preference_general_parameter">
+        <PreferenceScreen android:title="@string/zzzzz_lightadjust_preference_general_parameter_advanced" android:key="parameter_key" android:summary="@string/zzzzz_lightadjust_preference_general_parameter_advanced_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/zzzzz_lightadjust_preference_general_others_label">
+        <PreferenceScreen android:title="@string/zzzzz_lightadjust_preference_general_reset_all_settings_label" android:key="reset_all_settings_key" android:summary="@string/zzzzz_lightadjust_preference_general_reset_all_settings_label_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

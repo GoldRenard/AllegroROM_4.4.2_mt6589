@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false" android:orderingFromXml="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sound_category_sound_title_lenovo" android:key="general" />
+    <CheckBoxPreference android:title="@string/vibrate_title_lenovo" android:key="phone_vibrate" android:summary="@string/phone_vibrate_summary_lenovo" />
+    <CheckBoxPreference android:title="@string/audio_switch" android:key="boot_audio" android:summary="@string/control_audio" />
+    <com.android.settings.audioprofile.RingerVolumePreferenceLenovo android:persistent="false" android:title="@string/all_volume_title_lenovo" android:key="ring_volume" android:summary="@string/ring_volume_summary" android:dialogTitle="@string/all_volume_title_lenovo" />
+    <PreferenceCategory android:title="@string/sound_category_calls_title_lenovo" android:key="ringtone">
+        <com.android.settings.audioprofile.DefaultRingtonePreferenceLenovo android:persistent="false" android:title="@string/voice_video_call_title_1" android:key="phone_ringtone" android:summary="@string/voice_video_call_summary_1" />
+        <com.android.settings.audioprofile.DefaultRingtonePreferenceLenovo android:persistent="false" android:title="@string/voice_video_call_title_2" android:key="phone_ringtone_2" android:summary="@string/voice_video_call_summary_2" />
+        <com.android.settings.audioprofile.SimBindingRingtonePreference android:persistent="false" android:title="@string/voice_video_call_title" android:key="sim_binding_phone_ringtone" android:summary="@string/voice_video_call_summary" />
+        <com.android.settings.audioprofile.SimBindingRingtonePreference android:persistent="false" android:title="@string/voice_video_call_title" android:key="sim_binding_phone_ringtone_2" android:summary="@string/voice_video_call_summary" />
+        <com.android.settings.audioprofile.DefaultRingtonePreferenceLenovo android:persistent="false" android:title="@string/video_call_title_lap" android:key="video_call_ringtone" android:summary="@string/video_call_summary_lap" />
+        <CheckBoxPreference android:title="@string/profile_edit_pocket_title" android:key="pocket_mode" android:summary="@string/profile_edit_pocket_summary" />
+        <CheckBoxPreference android:title="@string/profile_edit_weaken_title" android:key="ringtone_weaken" android:summary="@string/profile_edit_weaken_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sound_category_sms_notification_title" android:key="notifications_sms">
+        <com.android.settings.audioprofile.DefaultRingtonePreferenceLenovo android:persistent="false" android:title="@string/sms_notification_sound_title_1" android:key="sms_notifi_tone" android:summary="@string/sms_notification_sound_summary_1" />
+        <com.android.settings.audioprofile.DefaultRingtonePreferenceLenovo android:persistent="false" android:title="@string/sms_notification_sound_title_2" android:key="sms_notifi_tone_2" android:summary="@string/sms_notification_sound_summary_2" />
+        <com.android.settings.audioprofile.NoSimBindingRingtonePreference android:persistent="false" android:title="@string/sms_notification_sound_title" android:key="no_sim_binding_sms_notifi_tone" android:summary="@string/sms_notification_sound_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sound_category_notification_title_lenovo" android:key="notifications">
+        <com.android.settings.DefaultRingtonePreference android:persistent="false" android:title="@string/notification_sound_title_lenovo" android:key="notifications_ringtone" android:summary="@string/notification_sound_summary" android:ringtoneType="notification" android:showSilent="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sound_category_feedback_title_lenovo" android:key="feedback" />
+    <CheckBoxPreference android:title="@string/dtmf_tone_enable_title_lenovo" android:key="audible_touch_tones" android:summary="@string/dtmf_tone_enable_summary" />
+    <CheckBoxPreference android:title="@string/sound_effects_enable_title_lenovo" android:key="audible_selection" android:summary="@string/sound_effects_enable_summary" />
+    <CheckBoxPreference android:title="@string/lock_sounds_enable_title_lenovo" android:key="screen_lock_sounds" android:summary="@string/lock_sounds_enable_summary" />
+    <CheckBoxPreference android:title="@string/haptic_feedback_enable_title_lenovo" android:key="haptic_feedback" android:summary="@string/haptic_feedback_enable_summary" />
+</PreferenceScreen>

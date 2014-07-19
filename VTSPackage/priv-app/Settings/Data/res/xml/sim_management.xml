@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/gemini_sim_info_title" android:key="sim_info" />
+    <PreferenceCategory android:title="@string/gemini_default_sim_title" android:key="default_sim">
+        <com.mediatek.gemini.simui.SimSelectDialogPreference android:icon="@drawable/gemini_voice_call" android:title="@string/gemini_voice_call" android:key="voice_call_sim_setting" />
+        <com.mediatek.gemini.simui.SimSelectDialogPreference android:icon="@drawable/gemini_video_call" android:title="@string/gemini_video_call" android:key="video_call_sim_setting" />
+        <com.mediatek.gemini.simui.SimSelectDialogPreference android:icon="@drawable/gemini_sms" android:title="@string/gemini_msg" android:key="sms_sim_setting" />
+        <com.mediatek.gemini.simui.SimSelectDialogPreference android:icon="@drawable/gemini_data_connection" android:title="@string/gemini_data_connection" android:key="gprs_sim_setting" />
+    </PreferenceCategory>
+</PreferenceScreen>

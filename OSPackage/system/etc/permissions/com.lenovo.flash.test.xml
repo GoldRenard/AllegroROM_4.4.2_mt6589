@@ -1,0 +1,5 @@
+<!-- This is the feature to sub flash test-->
+
+<permissions>
+    <feature name="com.lenovo.flash.test"/>
+</permissions>

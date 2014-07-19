@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.4"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.android.settings">
+    <com.lenovo.setupwizard.view.ViewFlow android:id="@id/viewFlow" android:background="@mipmap/top_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.lenovo.setupwizard.view.CircleFlowIndicator android:layout_gravity="bottom|center" android:id="@id/viewflowindic" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" app:activeColor="#ffffffff" app:inactiveColor="#ffffffff" app:radius="3.0dip" app:strokeWidth="1.5dip" app:inactiveType="stroke" app:activeType="fill" app:circleSeparation="20.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_text" android:gravity="center" android:layout_gravity="bottom" android:id="@id/title" android:background="@mipmap/middle_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

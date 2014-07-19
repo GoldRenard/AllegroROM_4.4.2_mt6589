@@ -1,0 +1,5 @@
+<!-- This is the feature to dualmic test loopback to receiver-->
+
+<permissions>
+    <feature name="com.lenovo.mic.loopback"/>
+</permissions>

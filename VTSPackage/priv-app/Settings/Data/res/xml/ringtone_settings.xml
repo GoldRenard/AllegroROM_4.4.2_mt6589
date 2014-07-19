@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sound_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/all_volume_title" android:key="volume_category">
+        <com.android.settings.audioprofile.RingerVolumePreferenceLenovo android:persistent="false" android:title="@string/all_volume_title" android:key="sound_settings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/ring_summary_lap" android:key="ringtone_category">
+        <com.android.settings.audioprofile.SimBindingRingtonePreference android:persistent="false" android:title="@string/voice_video_call_title" android:key="sim_binding_phone_ringtone" android:summary="@string/voice_video_call_summary" />
+        <com.android.settings.audioprofile.SimBindingRingtonePreference android:persistent="false" android:title="@string/voice_video_call_title" android:key="sim_binding_phone_ringtone_2" android:summary="@string/voice_video_call_summary" />
+        <com.android.settings.audioprofile.NoSimBindingRingtonePreference android:persistent="false" android:title="@string/sms_notification_sound_title" android:key="no_sim_binding_sms_notifi_tone" android:summary="@string/sms_notification_sound_summary" />
+        <com.android.settings.DefaultRingtonePreference android:persistent="false" android:title="@string/notification_sound_title_lenovo" android:key="notification_sound" android:summary="@string/notification_sound_summary" android:ringtoneType="notification" android:showSilent="false" />
+        <CheckBoxPreference android:title="@string/audio_switch" android:key="boot_audio" android:summary="@string/control_audio" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+version: 2.0.0-Beta9
+apkFileName: 8305BB.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 3
+  tag: S960_AllegroROM_2.0
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '19'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '19'
+  versionName: 4.4.2-S960_ROW_S210_140529
+compressionType: true
+unknownFiles:
+  org/apache/http/entity/mime/version.properties: '8'

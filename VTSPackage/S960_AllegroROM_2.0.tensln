@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TenSolution Version="2">
+  <Projects>
+    <Project Value="framework\android.policy\android.policy.frwproject" />
+    <Project Value="boot\boot.bootproject" />
+    <Project Value="framework\framework\framework.frwproject" />
+    <Project Value="framework\framework2\framework2.frwproject" />
+    <Project Value="framework\framework-res\framework-res.apkproject" />
+    <Project Value="app\InCallUI\InCallUI.apkproject" />
+    <Project Value="framework\services\services.frwproject" />
+    <Project Value="priv-app\Settings\Settings.apkproject" />
+  </Projects>
+  <Settings>
+    <Setting Name="solutionname" Value="S960_AllegroROM_2.0" />
+  </Settings>
+</TenSolution>

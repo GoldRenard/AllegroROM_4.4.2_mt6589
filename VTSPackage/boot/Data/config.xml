@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Bootimg>
+	<Config>
+		<Value Key="cmdline" Value="" />
+		<Value Key="kernel_offset" Value="10008000" />
+		<Value Key="name" Value="S960_ROW_S210_1" />
+		<Value Key="page_size" Value="800" />
+		<Value Key="ramdisk_offset" Value="11000000" />
+		<Value Key="second_offset" Value="10f00000" />
+		<Value Key="tags_addr" Value="10000100" />
+	</Config>
+	<Files>
+		<Folder Name="data" Mode="505" />
+		<File Name="default.prop" Mode="420" />
+		<Folder Name="dev" Mode="493" />
+		<File Name="enableswap.sh" Mode="420" />
+		<File Name="factory_init.project.rc" Mode="420" />
+		<File Name="factory_init.rc" Mode="420" />
+		<File Name="file_contexts" Mode="420" />
+		<File Name="fstab" Mode="420" />
+		<File Name="fstab.fat.nand" Mode="416" />
+		<File Name="fstab.nand" Mode="416" />
+		<File Name="init" Mode="488" />
+		<File Name="init.aee.customer.rc" Mode="488" />
+		<File Name="init.charging.rc" Mode="488" />
+		<File Name="init.environ.rc" Mode="488" />
+		<File Name="init.modem.rc" Mode="488" />
+		<File Name="init.preload.rc" Mode="488" />
+		<File Name="init.project.rc" Mode="488" />
+		<File Name="init.protect.rc" Mode="488" />
+		<File Name="init.rc" Mode="488" />
+		<File Name="init.ssd.rc" Mode="488" />
+		<File Name="init.trace.rc" Mode="488" />
+		<File Name="init.usb.rc" Mode="488" />
+		<File Name="init.xlog.rc" Mode="488" />
+		<File Name="meta_init.modem.rc" Mode="420" />
+		<File Name="meta_init.project.rc" Mode="420" />
+		<File Name="meta_init.rc" Mode="420" />
+		<Folder Name="proc" Mode="493" />
+		<File Name="property_contexts" Mode="420" />
+		<Folder Name="sbchk" Mode="493" />
+		<File Name="sbchk/sbchk" Mode="420" />
+		<File Name="sbchk/sec_chk.sh" Mode="420" />
+		<Folder Name="sbin" Mode="488" />
+		<File Name="sbin/adbd" Mode="488" />
+		<File Name="sbin/bootres" Mode="488" />
+		<File Name="sbin/bootsf" Mode="488" />
+		<File Name="sbin/e2fsck" Mode="488" />
+		<File Name="sbin/healthd" Mode="488" />
+		<File Name="sbin/meta_tst" Mode="488" />
+		<File Name="sbin/reportroot" Mode="488" />
+		<File Name="sbin/tune2fs" Mode="488" />
+		<Symlink Name="sbin/ueventd" Mode="488" Target="../init" />
+		<Symlink Name="sbin/watchdogd" Mode="488" Target="../init" />
+		<File Name="seapp_contexts" Mode="420" />
+		<File Name="sepolicy" Mode="420" />
+		<Folder Name="sys" Mode="493" />
+		<Folder Name="system" Mode="493" />
+		<File Name="ueventd.rc" Mode="420" />
+	</Files>
+</Bootimg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingEnd="?android:scrollbarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/simIcon" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginTop="6.0sp" android:layout_marginBottom="6.0sp" android:layout_centerVertical="true" android:layout_marginStart="6.0sp" android:layout_marginEnd="6.0sp">
+        <ImageView android:layout_gravity="center" android:id="@id/simStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/sim3g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gemini_3g_indic" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_gravity="end|bottom|center" android:id="@id/simNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="0.0sp" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/text_layout_sim_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0sp" android:layout_marginBottom="6.0sp" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginEnd="6.0sp">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorPrimary" android:ellipsize="middle" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:ellipsize="middle" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@android:id/title" android:layout_alignStart="@android:id/title" />
+    </RelativeLayout>
+    <CheckBox android:gravity="center" android:id="@id/Check_Enable" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+</LinearLayout>

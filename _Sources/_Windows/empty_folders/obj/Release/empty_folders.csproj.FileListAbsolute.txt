@@ -1,0 +1,5 @@
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\bin\Release\empty_folders.exe
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\bin\Release\empty_folders.pdb
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\obj\Release\empty_folders.csprojResolveAssemblyReference.cache
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\obj\Release\empty_folders.exe
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\obj\Release\empty_folders.pdb

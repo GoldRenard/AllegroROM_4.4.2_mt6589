@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/location_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/usb_connection_category" android:key="usb_select" />
+    <PreferenceCategory android:title="@string/enable_adb" android:key="key_enable_adb">
+        <CheckBoxPreference android:title="@string/enable_adb" android:key="enable_adb" android:summary="@string/enable_adb_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/tether_title" android:key="key_usb_tether">
+        <CheckBoxPreference android:title="@string/usb_tether" android:key="usb_tether_settings" android:summary="@string/usb_tethering_available_subtext" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/usbsetting_help_title" android:key="usb_help" />
+    <com.android.settings.deviceinfo.UsbPreference android:title="@string/usb_charge_title" android:key="usb_charge" android:summary="@string/usb_charge_summary" />
+    <PreferenceCategory android:title="@string/usb_connect_as_cdrom_category" android:key="usb_connect_as_cdrom_category" />
+    <com.android.settings.deviceinfo.UsbPreference android:title="@string/usb_bicr_title" android:key="usb_bicr" android:summary="@string/usb_bicr_summary" />
+</PreferenceScreen>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/display_effect_off_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/saturation_lyt" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EffectOfScreenItem">
+        <TextView android:textSize="@dimen/display_effect_of_screen_title_size" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_saturation_title" android:layout_weight="1.0" />
+        <RadioGroup android:gravity="right|center" android:orientation="horizontal" android:id="@id/saturation" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checkedButton="@id/ataaw3" android:layout_weight="2.0">
+            <com.android.settings.EffectOfScreenRadioButton android:id="@id/rb0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_saturation_item0" android:layout_weight="1.0" style="@style/EffectOfScreenItemCheck" />
+            <com.android.settings.EffectOfScreenRadioButton android:id="@id/rb1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_saturation_item1" android:layout_weight="1.0" style="@style/EffectOfScreenItemCheck" />
+            <com.android.settings.EffectOfScreenRadioButton android:id="@id/rb2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_saturation_item2" android:layout_weight="1.0" style="@style/EffectOfScreenItemCheck" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/hue_lyt" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EffectOfScreenItem">
+        <TextView android:textSize="@dimen/display_effect_of_screen_title_size" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_hue_title" android:layout_weight="1.0" />
+        <RadioGroup android:gravity="right|center" android:orientation="horizontal" android:id="@id/hue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checkedButton="@id/ataaw3" android:layout_weight="2.0">
+            <com.android.settings.EffectOfScreenRadioButton android:id="@id/rb0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_contrast_item0" android:layout_weight="1.0" style="@style/EffectOfScreenItemCheck" />
+            <com.android.settings.EffectOfScreenRadioButton android:id="@id/rb1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_contrast_item1" android:layout_weight="1.0" style="@style/EffectOfScreenItemCheck" />
+            <com.android.settings.EffectOfScreenRadioButton android:id="@id/rb2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_contrast_item2" android:layout_weight="1.0" style="@style/EffectOfScreenItemCheck" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/sharpen_lyt" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EffectOfScreenItem">
+        <TextView android:textSize="@dimen/display_effect_of_screen_title_size" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_sharpen_title" android:layout_weight="1.0" />
+        <RadioGroup android:gravity="right|center" android:orientation="horizontal" android:id="@id/sharpen" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checkedButton="@id/ataaw3" android:layout_weight="2.0">
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.android.settings.EffectOfScreenRadioButton android:id="@id/rb0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_sharpen_item0" android:layout_weight="1.0" style="@style/EffectOfScreenItemCheck" />
+            <com.android.settings.EffectOfScreenRadioButton android:id="@id/rb1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/display_effect_of_screen_sharpen_item1" android:layout_weight="1.0" style="@style/EffectOfScreenItemCheck" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+    	android:id="@id/btn_container"
+    	android:gravity="bottom"
+    	android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16.0dip"
+        android:layout_height="wrap_content"
+        android:minHeight="40.0dip"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="beginning"
+        android:dividerPadding="0dip"
+        android:layout_weight="1.0">
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="locale"
+            android:measureWithLargestChild="true">
+            <Button android:id="@id/apply"
+            	android:text="@string/display_effect_of_screen_apply"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:maxLines="2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="14sp"
+                android:minHeight="40.0dip"
+                android:layout_height="wrap_content" />
+            <Button android:id="@id/cancel"
+            	android:text="@string/display_effect_of_screen_cancel"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="14sp"
+                android:minHeight="40.0dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+     </LinearLayout>
+    
+</LinearLayout>

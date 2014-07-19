@@ -1,0 +1,5 @@
+<!-- This is the feature set for ziptheme support -->
+
+<permissions>
+    <feature name="com.lenovo.framework.ziptheme.support" />
+</permissions>

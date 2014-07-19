@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/devices_info_phone_param"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/devices_info_cpu_title" android:key="phone_param_cpu" android:summary="@string/devices_info_cpu_value_unknown" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/devices_info_runMemory_title" android:key="phone_param_runMemory" android:summary="@string/devices_info_runMemory_value_unknown" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/devices_info_screen_title" android:key="phone_param_screen" android:summary="@string/devices_info_screen_value_unknown" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/devices_info_camera_title" android:key="phone_param_camera" android:summary="@string/devices_info_camera_value_unknown" style="?android:preferenceInformationStyle" />
+</PreferenceScreen>

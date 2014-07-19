@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vt_incall_screen_button_height">115.0px</dimen>
+    <dimen name="vt_incall_screen_button_width">129.0px</dimen>
+    <dimen name="vt_incall_screen_low_video_height">230.0px</dimen>
+    <dimen name="vt_incall_screen_low_video_width">282.0px</dimen>
+    <dimen name="reject_call_offset">40.0dip</dimen>
+    <dimen name="answer_call_offset">574.0dip</dimen>
+    <dimen name="press_x_top_offset">67.0dip</dimen>
+    <dimen name="press_x_bottom_offset">278.0dip</dimen>
+    <dimen name="press_y_top_offset">67.0dip</dimen>
+    <dimen name="press_y_bottom_offset">334.0dip</dimen>
+    <dimen name="vt_incall_screen_high_video_width">540.0px</dimen>
+    <dimen name="vt_incall_screen_high_video_height">442.0px</dimen>
+</resources>

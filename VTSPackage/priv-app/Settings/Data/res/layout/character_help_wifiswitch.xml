@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/help_gif" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/help_summary" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/help_gif" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/help_summary" android:layout_centerHorizontal="true">
+        	<View android:layout_width="match_parent" android:layout_height="1.0dip" android:background="#70777777" />
+            <Button android:id="@id/help_ok"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="14sp"
+                android:text="@string/i_know_it"
+                android:minHeight="40dip"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/radiobutton" android:paddingLeft="30.0dip" android:paddingRight="20.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@id/profiles_text" android:paddingRight="60.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:maxLines="1" android:singleLine="true" android:layout_alignParentLeft="true" />
+</RelativeLayout>

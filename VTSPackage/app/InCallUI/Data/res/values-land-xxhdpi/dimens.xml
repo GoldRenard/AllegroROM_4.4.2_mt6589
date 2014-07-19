@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="call_banner_height">@dimen/in_call_end_button_height</item>
+    <dimen name="call_banner_side_padding">6.0dip</dimen>
+    <dimen name="call_banner_top_bottom_padding">0.0dip</dimen>
+    <dimen name="in_call_button_height">171.0px</dimen>
+    <dimen name="in_call_end_button_height">171.0px</dimen>
+    <dimen name="button_cluster_side_padding">0.0dip</dimen>
+    <dimen name="emergency_dialer_digits_height">66.0dip</dimen>
+    <dimen name="incoming_call_widget_circle_size">94.0dip</dimen>
+    <dimen name="incoming_call_widget_asset_margin">22.0dip</dimen>
+    <dimen name="glowpadview_outerring_diameter">560.0dip</dimen>
+    <dimen name="glowpadview_target_placement_radius">280.0dip</dimen>
+    <dimen name="call_state_label_height">24.0dip</dimen>
+    <dimen name="call_banner_text_size">18.0sp</dimen>
+    <dimen name="call_banner_small_text_size">10.0dip</dimen>
+    <dimen name="call_banner_sim_indicator_padding">3.0dip</dimen>
+    <dimen name="call_banner_sim_indicator_padding_left">10.0dip</dimen>
+    <dimen name="call_banner_sim_indicator_padding_right">6.0dip</dimen>
+    <dimen name="dialpad_vertical_margin_dtmf">135.0px</dimen>
+    <dimen name="in_call_button_width">291.0px</dimen>
+    <dimen name="call_banner_name_text_size">35.0sp</dimen>
+    <dimen name="dtmf_dialpad_vertical_margin_top">150.0px</dimen>
+    <dimen name="dtmf_digits_text_height">178.0px</dimen>
+    <dimen name="name_label_number_padding_bottom">2.0px</dimen>
+    <dimen name="dtmf_dialpad_table_height">715.0px</dimen>
+    <dimen name="in_call_call_banner_height">260.0px</dimen>
+    <dimen name="callstate_title_height">178.0px</dimen>
+    <dimen name="call_photo_width_lan">445.0px</dimen>
+    <dimen name="call_photo_height_lan">445.0px</dimen>
+    <dimen name="incall_glowpadview_margin_top">-300.0px</dimen>
+    <dimen name="incall_glowpadview_outer_radius">260.0dip</dimen>
+</resources>

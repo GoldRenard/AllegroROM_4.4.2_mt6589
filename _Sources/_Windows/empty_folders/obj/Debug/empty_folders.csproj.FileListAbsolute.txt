@@ -1,0 +1,4 @@
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\bin\Debug\empty_folders.exe
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\bin\Debug\empty_folders.pdb
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\obj\Debug\empty_folders.exe
+D:\Devices\S960_AllegroROM2.0\_Sources\_Windows\empty_folders\obj\Debug\empty_folders.pdb

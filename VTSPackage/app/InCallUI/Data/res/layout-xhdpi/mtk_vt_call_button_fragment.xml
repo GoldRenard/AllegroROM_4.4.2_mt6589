@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vtCallButtonContainer" android:background="@color/button_background" android:paddingLeft="@dimen/vt_incall_screen_button_margin_out" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginEnd="@dimen/vt_incall_screen_button_interval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ToggleButton android:id="@id/VTDialpad" android:background="@drawable/mtk_btn_compound_dialpad_vt" android:layout_height="fill_parent" android:contentDescription="@string/onscreenShowDialpadText" style="@style/InCallCompoundButton" />
+        <ImageButton android:id="@id/VTSpeaker" android:background="@drawable/mtk_btn_compound_audio_vt" android:layout_height="fill_parent" android:contentDescription="@string/onscreenAudioText" style="@style/InCallButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ToggleButton android:id="@id/VTMute" android:background="@drawable/mtk_btn_compound_mute_vt" android:layout_height="fill_parent" android:contentDescription="@string/onscreenMuteText" style="@style/InCallCompoundButton" />
+        <ToggleButton android:id="@id/VTSwapVideo" android:background="@drawable/mtk_btn_compound_swap_video_vt" android:layout_height="fill_parent" android:contentDescription="@string/vt_swap_video" style="@style/InCallCompoundButton" />
+        <ImageButton android:id="@id/VTOverflowMenu" android:background="@drawable/mtk_btn_image_overflow_vt" android:layout_height="fill_parent" android:src="@drawable/mtk_ic_menu_overflow" style="@style/InCallButton" />
+    </LinearLayout>
+    <ImageButton android:id="@id/VTHangUp" android:background="@drawable/end_call_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/ic_end_call" android:layout_weight="1.0" android:contentDescription="@string/onscreenEndCallText" style="@style/InCallButton" />
+</LinearLayout>

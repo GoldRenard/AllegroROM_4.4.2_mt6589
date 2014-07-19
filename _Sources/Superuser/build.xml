@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Superuser" default="release">
+
+    <property file="..\\local.properties" />
+    <property file="..\\ant.properties" />
+
+    <property environment="env" />
+    <condition property="sdk.dir" value="${env.ANDROID_HOME}">
+        <isset property="env.ANDROID_HOME" />
+    </condition>
+
+    <loadproperties srcFile="project.properties" />
+
+    <fail message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable." unless="sdk.dir" />
+    <fail message="You must set KITCHEN_HOME variable!" unless="env.KITCHEN_HOME" />
+
+    <target name="-pre-build">
+        <exec executable="${ndk.dir}/${ndk.executable}" failonerror="true">
+          <arg value="-j8" />
+        </exec>
+    </target>
+
+    <target name="clean" depends="android_rules.clean">
+        <exec executable="${ndk.dir}/${ndk.executable}" failonerror="true">
+            <arg value="clean"/>
+        </exec>
+        <delete file="bin/update.zip"/>
+        <delete file="bin/Superuser.apk"/>
+        <delete dir="bin/META-INF" />
+    </target>
+
+    <target name="-post-build">
+        <!--<mkdir dir="bin/recoveryzip/META-INF/com/google/android" />
+        <copy file="assets/update-binary" tofile="bin/recoveryzip/META-INF/com/google/android/update-binary"/>
+        <copy file="assets/install-recovery.sh" tofile="bin/recoveryzip/install-recovery.sh"/>
+        <copy file="bin/Superuser-release.apk" tofile="bin/recoveryzip/Superuser.apk"/>
+
+        <exec executable="zip" failonerror="true" dir="bin/recoveryzip">
+          <arg value="-ry"/>
+          <arg value="../update.zip"/>
+          <arg value="."/>
+        </exec>
+        <exec executable="zip" failonerror="true" dir="libs">
+          <arg value="-ry"/>
+          <arg value="../bin/update.zip"/>
+          <arg value="armeabi"/>
+          <arg value="x86"/>
+          <arg value="mips"/>
+        </exec>-->
+		<copy file="${out.final.file}" tofile="${env.KITCHEN_HOME}\${priv-app.dir}\${ant.project.name}.apk" overwrite="true" />
+		<copy file="libs\armeabi\su" tofile="${env.KITCHEN_HOME}\${xbin.dir}\su" overwrite="true" />
+    </target>
+
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/header_category_call_and_msg" android:key="call_and_msg">
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/side_key_backlight_title" android:key="side_key_backlight" android:summary="@string/side_key_backlight_summary" android:layout="@layout/preference" />
+        <com.android.settings.tabsettings.WideTouchSwitchPreference android:title="@string/wide_touch_title" android:key="wide_touch" android:summary="@string/wide_touch_summary" android:layout="@layout/preference" />
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/slide_unlock_title" android:key="slide_unlock" android:summary="@string/slide_unlock_summary" android:layout="@layout/preference" />
+        <!--<com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/mercury_keyboard_title" android:key="mercury_keyboard" android:summary="@string/mercury_keyboard_summary" android:layout="@layout/preference" />-->
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/pin_scroll_title" android:key="pin_scroll" android:summary="@string/pin_scroll_summary" android:layout="@layout/preference" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/header_category_lock_and_screen" android:key="lock_and_screen">
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/swing_lock" android:key="swing_lock" android:summary="@string/swing_lock_summary" android:layout="@layout/preference" />
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/smart_call_answer_title" android:key="smart_call_answer" android:summary="@string/smart_call_answer_summary" android:layout="@layout/preference" />
+        <!--<com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/smart_calling_title" android:key="smart_calling" android:summary="@string/smart_calling_summary" android:layout="@layout/preference" />-->
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/long_menu_active_voice" android:key="long_menu_active_voice" android:summary="@string/long_menu_active_voice_summary" android:layout="@layout/preference" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/header_category_system_and_key" android:key="sys_and_key">
+        <!--<com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/display_smart_standby" android:key="smart_standby_enable" android:summary="@string/smart_standby_ctrl_description" android:layout="@layout/preference" />
+        <ListPreference android:persistent="false" android:entries="@array/entries_smart_rotation" android:title="@string/smart_rotete_cbox_title" android:key="smart_rotation" android:summary="@string/smart_rotete_cbox_summary" android:entryValues="@array/entryvalues_smart_rotation" />-->
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/profile_edit_pocket_title" android:key="pocket_mode" android:summary="@string/profile_edit_pocket_summary" android:layout="@layout/preference" />
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/profile_edit_weaken_title" android:key="ringtone_weaken" android:summary="@string/profile_edit_weaken_summary" android:layout="@layout/preference" />
+        <Preference android:title="@string/smart_scene_title" android:key="smart_scene_preference" android:summary="@string/smart_scene_summary" />
+        <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/smartscene_home_roadcondition" android:key="smartscene_home_roadcondition" android:summary="@string/smartscene_home_roadcondition_summary" android:layout="@layout/preference" />
+    </PreferenceCategory>
+</PreferenceScreen>

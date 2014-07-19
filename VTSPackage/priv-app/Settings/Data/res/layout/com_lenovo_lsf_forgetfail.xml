@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="80.0dip" android:src="@drawable/APKTOOL_DUMMY_0039" android:scaleType="fitXY" />
+    <TextView android:text="@string/com_lenovo_lsf_forgetfail_string_fail" style="@style/com_lenovo_lsf_text_large" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <TextView android:text="@string/com_lenovo_lsf_forgetfail_string_detail" style="@style/com_lenovo_lsf_text_small" />
+        <TextView android:id="@id/forgetfail_text_reason" android:layout_marginLeft="10.0dip" android:text="@string/com_lenovo_lsf_forgetfail_string_detail" style="@style/com_lenovo_lsf_text_small" />
+    </LinearLayout>
+    <Button android:id="@id/forgetfail_button_resend" android:text="@string/com_lenovo_lsf_forgetfail_string_resend" style="@style/com_lenovo_lsf_button_style" />
+</LinearLayout>

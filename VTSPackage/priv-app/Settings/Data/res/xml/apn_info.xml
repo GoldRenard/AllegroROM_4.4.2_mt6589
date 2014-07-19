@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/apn_info"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <Preference android:title="@string/apn_name" android:key="apn_name" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_apn" android:key="apn_apn" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_type" android:key="apn_type" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_http_proxy" android:key="apn_http_proxy" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_http_port" android:key="apn_http_port" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_user" android:key="apn_user" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_password" android:key="apn_password" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_server" android:key="apn_server" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_mmsc" android:key="apn_mmsc" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_mms_proxy" android:key="apn_mms_proxy" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_mms_port" android:key="apn_mms_port" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_mcc" android:key="apn_mcc" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_mnc" android:key="apn_mnc" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_auth_type" android:key="auth_type" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/apn_protocol" android:key="apn_protocol" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/carrier_enabled" android:key="carrier_enabled" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/bearer" android:key="bearer" style="?android:preferenceInformationStyle" />
+</PreferenceScreen>

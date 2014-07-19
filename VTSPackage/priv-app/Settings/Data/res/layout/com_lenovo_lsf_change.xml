@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.lsf.account.view.KeyboardLayout android:orientation="vertical" android:id="@id/change_keyboardLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/change_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/com_lenovo_lsf_layout_loc">
+                <TextView android:id="@id/change_text_changepassword" android:text="@string/com_lenovo_lsf_change_string_changepassword" style="@style/com_lenovo_lsf_head_text" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/APKTOOL_DUMMY_0040" android:scaleType="fitXY" />
+            <LinearLayout android:id="@id/change_layout_error" android:paddingTop="10.0dip" style="@style/com_lenovo_lsf_layout_loc">
+                <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/change_text_error" android:background="#ffffa200" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/com_lenovo_lsf_text_size_small" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/change_layout_password" android:paddingTop="0.0dip" style="@style/com_lenovo_lsf_layout_loc">
+                <RelativeLayout android:id="@id/change_layout_oldpassword" style="@style/com_lenovo_lsf_input_area">
+                    <TextView android:id="@id/change_text_oldpassword" android:text="@string/com_lenovo_lsf_change_string_oldpassword" style="@style/com_lenovo_lsf_input_text" />
+                    <EditText android:id="@id/change_edit_oldpassword" android:hint="@string/com_lenovo_lsf_register_string_setpwdhint" android:layout_toRightOf="@id/change_text_oldpassword" android:inputType="textPassword" style="@style/com_lenovo_lsf_input_edit" />
+                </RelativeLayout>
+                <RelativeLayout style="@style/com_lenovo_lsf_input_area">
+                    <TextView android:id="@id/change_text_newpassword" android:text="@string/com_lenovo_lsf_change_string_newpassword" style="@style/com_lenovo_lsf_input_text" />
+                    <EditText android:id="@id/change_edit_newpassword" android:hint="@string/com_lenovo_lsf_register_string_setpwdhint" android:layout_toRightOf="@id/change_text_newpassword" android:inputType="textPassword" style="@style/com_lenovo_lsf_input_edit" />
+                </RelativeLayout>
+                <RelativeLayout style="@style/com_lenovo_lsf_input_area">
+                    <TextView android:id="@id/change_text_confirmpassword" android:text="@string/com_lenovo_lsf_change_string_confirmpassword" style="@style/com_lenovo_lsf_input_text" />
+                    <EditText android:id="@id/change_edit_confirmpassword" android:hint="@string/com_lenovo_lsf_register_string_setpwdhint" android:layout_toRightOf="@id/change_text_confirmpassword" android:inputType="textPassword" style="@style/com_lenovo_lsf_input_edit" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="20.0dip" style="@style/com_lenovo_lsf_bottom">
+                <Button android:id="@id/change_button_confirm" android:text="@string/com_lenovo_lsf_change_string_confirm" style="@style/com_lenovo_lsf_button_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.lenovo.lsf.account.view.KeyboardLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.mediatek.settings.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/title">
+            <TextView android:ellipsize="none" android:gravity="bottom" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:requiresFadingEdge="horizontal" style="@style/OobeSetupTitle" />
+        </LinearLayout>
+        <View android:id="@id/top_divider" android:layout_below="@id/title_bar" style="@style/TopDivider" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_area">
+        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <include layout="@layout/progressbar" />
+        <include layout="@layout/button_panel" />
+    </LinearLayout>
+</view>

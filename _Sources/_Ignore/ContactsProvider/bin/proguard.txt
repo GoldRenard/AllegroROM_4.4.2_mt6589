@@ -1,0 +1,32 @@
+# view AndroidManifest.xml #generated:54
+-keep class com.android.providers.contacts.CallLogProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.android.providers.contacts.ContactsProvider2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.android.providers.contacts.ContactsUpgradeReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.android.providers.contacts.LocaleChangeReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.android.providers.contacts.PackageIntentReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.android.providers.contacts.VoicemailCleanupService { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.android.providers.contacts.VoicemailContentProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.android.providers.contacts.debug.ContactsDumpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.android.providers.contacts.debug.DumpFileProvider { <init>(...); }
+
+# onClick res/layout/contact_dump_activity.xml #generated:46
+# onClick res/layout/contact_dump_activity.xml #generated:54
+# onClick res/layout/contact_dump_activity.xml #generated:63
+-keepclassmembers class * { *** onClick(...); }
+

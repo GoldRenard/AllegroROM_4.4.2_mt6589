@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottomButtons" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/extraButtonRow" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/extra_button_row" />
+    <LinearLayout android:orientation="vertical" android:id="@id/callButtonContainer" android:background="@drawable/ic_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/button_cluster_side_padding" android:paddingEnd="@dimen/button_cluster_side_padding">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ToggleButton android:textColor="@color/record_btn_color" android:id="@id/recordButton" android:textOn="@null" android:textOff="@string/onscreenRecordText" android:drawableTop="@drawable/btn_compound_record" android:drawablePadding="-20.0dip" android:layout_weight="1.0" android:contentDescription="@string/onscreenRecordText" style="@style/InCallCompoundButton" />
+            <ToggleButton android:textColor="@color/dialpad_btn_color" android:id="@id/dialpadButton" android:textOn="@string/onscreenHideDialpadText" android:textOff="@string/onscreenShowDialpadText" android:drawableTop="@drawable/btn_dialpad" android:drawablePadding="-20.0dip" android:layout_weight="1.0" android:contentDescription="@string/onscreenShowDialpadText" style="@style/InCallCompoundButton" />
+            <ToggleButton android:textColor="@color/incall_btn_color" android:id="@id/audioButton" android:drawableTop="@drawable/btn_compound_audio" android:drawablePadding="-20.0dip" android:layout_weight="1.0" android:contentDescription="@string/onscreenAudioText" style="@style/InCallCompoundButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ToggleButton android:textColor="@color/incall_btn_color" android:id="@id/addButton" android:textOn="@string/onscreenAddCallText" android:textOff="@string/onscreenAddCallText" android:drawableTop="@drawable/btn_add" android:drawablePadding="-20.0dip" android:layout_weight="1.0" android:contentDescription="@string/onscreenAddCallText" style="@style/InCallCompoundButton" />
+            <ToggleButton android:textColor="@color/incall_btn_color" android:id="@id/mergeButton" android:textOn="@string/onscreenMergeCallsText" android:textOff="@string/onscreenMergeCallsText" android:drawableTop="@drawable/btn_merge" android:drawablePadding="-20.0dip" android:layout_weight="1.0" android:contentDescription="@string/onscreenMergeCallsText" style="@style/InCallButton" />
+            <ToggleButton android:textColor="@color/dialpad_btn_color" android:id="@id/muteButton" android:textOn="@string/onscreenMuteText" android:textOff="@string/onscreenMuteText" android:drawableTop="@drawable/btn_compound_mute" android:drawablePadding="-20.0dip" android:layout_weight="1.0" android:contentDescription="@string/onscreenMuteText" style="@style/InCallCompoundButton" />
+            <ToggleButton android:textColor="@color/incall_btn_color" android:id="@id/holdButton" android:textOn="@string/onscreenUnholdText" android:textOff="@string/onscreenHoldText" android:drawableTop="@drawable/btn_compound_hold" android:drawablePadding="-20.0dip" android:layout_weight="1.0" android:contentDescription="@string/onscreenHoldText" style="@style/InCallCompoundButton" />
+            <ToggleButton android:textColor="@color/incall_btn_color" android:id="@id/swapButton" android:textOn="@string/onscreenSwapCallsText" android:textOff="@string/onscreenSwapCallsText" android:drawableTop="@drawable/btn_switch" android:drawablePadding="-20.0dip" android:layout_weight="1.0" android:contentDescription="@string/onscreenSwapCallsText" style="@style/InCallCompoundButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/endButtonContainer" android:background="@drawable/end_call_bg" android:layout_width="fill_parent" android:layout_height="62.0dip">
+        <ImageButton android:id="@id/endButton" android:src="@drawable/ic_end_call" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/onscreenEndCallText" style="@style/InCallEndButton" />
+    </RelativeLayout>
+    <include layout="@layout/lenovo_vt_call_button_fragment" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/vtEndButtonContainer" android:background="@color/incall_call_screen_vt_color" android:layout_width="fill_parent" android:layout_height="@dimen/vt_end_button_container_height">
+        <ImageButton android:id="@id/VTHangUp" android:background="@drawable/endcall_background" android:layout_width="241.0dip" android:layout_height="46.0dip" android:src="@drawable/ic_end_call" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/onscreenEndCallText" />
+    </RelativeLayout>
+</LinearLayout>

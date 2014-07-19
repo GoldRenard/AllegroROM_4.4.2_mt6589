@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" coreApp="true" package="com.android.incallui">
+    <original-package android:name="com.android.incallui"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <application android:label="@string/inCallLabel" android:name="InCallApp" android:persistent="true" android:supportsRtl="true">
+        <activity android:configChanges="keyboardHidden" android:excludeFromRecents="true" android:exported="false" android:label="@string/inCallLabel" android:launchMode="singleInstance" android:name=".InCallActivity" android:screenOrientation="portrait" android:theme="@style/Theme.InCallScreen"/>
+        <service android:name="CallHandlerService" android:permission="android.permission.BIND_CALL_SERVICE">
+            <intent-filter>
+                <action android:name="com.android.services.telephony.common.ICallHandlerService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="InCallApp$NotificationBroadcastReceiver" exported="false">
+            <intent-filter>
+                <action android:name="com.android.incallui.ACTION_HANG_UP_ONGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".IncomingStrangerSave" android:process="com.android.incallui" android:theme="@style/ActivityDialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:name=".FloatService"/>
+        <receiver android:name="InCallApp$ReminderBroadcastReceiver" exported="false">
+            <intent-filter>
+                <action android:name="com.android.incallui.reminder"/>
+                <action android:name="com.android.incallui.reminder.delete"/>
+                <action android:name="com.android.incallui.dial"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".reminderAlertDialog" android:process="com.android.incallui" android:theme="@style/ActivityDialogTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

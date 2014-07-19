@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/title_top" android:background="#ff80c8e7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/com_lenovo_lsf_ui_name" android:layout_below="@id/title_top" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <View android:background="#ff0072a7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <ImageButton android:id="@id/title_menu" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/APKTOOL_DUMMY_0050" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/right_line" android:background="#ff00577c" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="27.0dip" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/title_menu" android:layout_centerVertical="true" />
+    <View android:id="@id/left_line" android:background="#ff80c8e7" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="27.0dip" android:layout_toLeftOf="@id/right_line" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings.tabsettings.WifiPreference android:persistent="false" android:layout="@layout/preference_charactersettings_switch_item" android:title="@string/wifi_settings_title" android:key="wifi_settings" android:defaultValue="true" android:fragment="com.android.settings.wifi.WifiSettings" />
+    <com.android.settings.tabsettings.DataPreference android:layout="@layout/preference_charactersettings_switch_item" android:title="@string/data_connection" android:key="data_connect_settings" />
+    <com.android.settings.tabsettings.BluetoothPreference android:layout="@layout/preference_charactersettings_switch_item" android:title="@string/bluetooth_settings_title" android:key="bluetooth_settings" android:fragment="com.android.settings.bluetooth.BluetoothSettings" />
+    <com.android.settings.BrightnessPreference android:layout="@layout/preference_commonsettings_item" android:title="@string/brightness" android:key="brightness" android:dialogTitle="@string/brightness" />
+    <Preference android:layout="@layout/preference_commonsettings_item" android:title="@string/wallpaper_settings_title" android:key="wallpaper" />
+    <Preference android:layout="@layout/preference_commonsettings_item" android:title="@string/theme_settings_title" android:key="theme" />
+    <com.android.settings.audioprofile.RingerVolumePreferenceLenovo android:persistent="false" android:layout="@layout/preference_commonsettings_item" android:title="@string/all_volume_title" android:key="sound_settings" />
+    <com.android.settings.audioprofile.SimBindingRingtonePreference android:persistent="false" android:layout="@layout/preference_commonsettings_item" android:title="@string/voice_video_call_title" android:key="sim_binding_phone_ringtone" />
+    <com.android.settings.audioprofile.SimBindingRingtonePreference android:persistent="false" android:layout="@layout/preference_commonsettings_item" android:title="@string/voice_video_call_title" android:key="sim_binding_phone_ringtone_2" />
+    <com.android.settings.audioprofile.NoSimBindingRingtonePreference android:persistent="false" android:layout="@layout/preference_commonsettings_item" android:title="@string/sms_notification_sound_title" android:key="no_sim_binding_sms_notifi_tone" />
+    <com.android.settings.audioprofile.SimBindingNotifiPreference android:persistent="false" android:layout="@layout/preference_commonsettings_item" android:title="@string/sms_notification_sound_title" android:key="sim_binding_sms_notifitone" />
+    <com.android.settings.audioprofile.SimBindingNotifiPreference android:persistent="false" android:layout="@layout/preference_commonsettings_item" android:title="@string/sms_notification_sound_title" android:key="sim_binding_sms_notifitone_2" />
+</PreferenceScreen>

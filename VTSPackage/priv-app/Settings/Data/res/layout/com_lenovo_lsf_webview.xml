@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/progressBar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/loading_process_dialog_progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" android:indeterminateDrawable="@drawable/APKTOOL_DUMMY_0037" />
+    </LinearLayout>
+    <WebView android:id="@id/webview" android:visibility="gone" android:scrollbars="horizontal|vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

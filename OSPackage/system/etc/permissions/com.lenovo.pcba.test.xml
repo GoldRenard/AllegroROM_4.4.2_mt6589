@@ -1,0 +1,5 @@
+<!-- This is the feature to pcba test-->
+
+<permissions>
+    <feature name="com.lenovo.pcba.test"/>
+</permissions>

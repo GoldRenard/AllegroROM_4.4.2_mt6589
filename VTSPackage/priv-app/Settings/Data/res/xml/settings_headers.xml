@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+	<!-- WIRELESS and NETWORKS -->
+    <header android:id="@id/wireless_section" 
+		android:title="@string/header_category_wireless_networks" />
+    
+    <!-- Airplane -->
+    <!--<header 
+		android:id="@id/airplane_settings" 
+		android:title="@string/airplane_mode"
+		android:icon="@drawable/empty_icon" />-->
+	
+	<!-- Wifi -->
+    <header 
+		android:id="@id/wifi_settings" 
+		android:title="@string/wifi_settings_title" 
+		android:fragment="com.android.settings.wifi.WifiSettings"
+		android:icon="@drawable/ic_settings_wireless" />
+	
+	<!-- Wifi Switch -->	
+	<header 
+		android:id="@id/wifi_switch_settings" 
+		android:title="@string/wifi_switch_settings_title"
+		android:icon="@drawable/ic_settings_wireless"	/>
+	
+    <!-- Bluetooth -->
+    <header 
+		android:id="@id/bluetooth_settings" 
+		android:title="@string/bluetooth_settings_title" 
+		android:fragment="com.android.settings.bluetooth.BluetoothSettings"
+		android:icon="@drawable/ic_settings_bluetooth2" />
+		
+    <!-- Mobile networks -->
+    <header 
+		android:id="@id/dataconnection_settings" 
+		android:title="@string/data_connection"
+		android:icon="@drawable/ic_settings_mobilenetworks" />
+
+    <!-- Data Usage -->
+    <header 
+		android:id="@id/data_usage_settings" 
+		android:title="@string/data_usage_summary_title" 
+		android:fragment="com.android.settings.DataUsageSummary" 
+		android:icon="@drawable/ic_settings_data_usage" />
+	
+    <!-- Operator hook -->
+    <header 
+		android:id="@id/operator_settings" 
+		android:fragment="com.android.settings.WirelessSettings">
+        <intent android:action="com.android.settings.OPERATOR_APPLICATION_SETTING" />
+    </header>
+	
+    <!-- Multi Sim Settings - this is in the settings process -->
+	<header 
+		android:id="@id/sim_settings" 
+		android:title="@string/gemini_sim_management_title" 
+		android:fragment="com.mediatek.gemini.SimManagement" 
+		android:icon="@drawable/ic_settings_sim" />
+	
+    <!-- Other wireless and network controls -->
+    <header 
+		android:id="@id/wireless_settings" 
+		android:title="@string/radio_controls_title" 
+		android:fragment="com.android.settings.WirelessSettings" android:breadCrumbTitle="@string/wireless_networks_settings_title"
+		android:icon="@drawable/empty_icon" />
+	
+	
+    <!-- INTERFACE -->
+	<header 
+		android:id="@id/display_personalize_section" 
+		android:title="@string/display_personalize" />
+
+    <!-- Home -->
+    <header 
+		android:id="@id/home_settings" 
+		android:title="@string/home_settings" 
+		android:fragment="com.android.settings.HomeSettings" 
+		android:icon="@drawable/ic_settings_home" />
+	
+    <!-- Lock screen -->
+    <header
+        android:title="@string/lock_screen_title"
+        android:icon="@drawable/ic_settings_lockscreen">
+    	<intent android:targetPackage="com.cyanogenmod.settings"
+        android:targetClass="com.cyanogenmod.settings.Settings$LockscreenSettingsActivity"/>    
+    </header>
+		
+    <!-- System UI -->
+    <header
+        android:icon="@drawable/ic_settings_system"
+        android:title="@string/system_settings_title">
+    	<intent android:targetPackage="com.cyanogenmod.settings"
+        android:targetClass="com.cyanogenmod.settings.Settings$SystemSettingsActivity"/>   
+    </header>
+
+	<!-- Character settings -->
+    <header 
+		android:title="@string/character_setings_title" 		
+		android:fragment="com.android.settings.tabsettings.CharacterSettings"
+		android:icon="@drawable/ic_system_feature"	/>
+
+    <!-- DEVICE -->
+    <header 
+		android:id="@id/device_section" 
+		android:title="@string/header_category_device" />
+	
+    <!-- Audio Profile -->
+    <header 
+		android:id="@id/audioprofle_settings" 
+		android:title="@string/audio_profile_settings_title_lap" android:fragment="com.android.settings.audioprofile.AudioProfileSettingsLenovo" 
+		android:icon="@drawable/ic_settings_profiles_am" />
+		
+    <!-- Sound -->
+    <header 
+		android:id="@id/sound_settings" 
+		android:title="@string/sound_settings" 
+		android:fragment="com.android.settings.SoundSettings" 
+		android:icon="@drawable/ic_settings_sound" />
+		
+    <!-- Ringtones -->
+    <header 
+		android:id="@id/ringtone_settings" 
+		android:title="@string/ringtone_settings" 
+		android:fragment="com.android.settings.audioprofile.RingtoneSettings" 
+		android:icon="@drawable/ic_settings_sound" />
+		
+    <!-- Display -->
+    <header 
+		android:id="@id/display_settings" 
+		android:title="@string/display_settings" 
+		android:fragment="com.android.settings.DisplaySettings" 
+		android:icon="@drawable/ic_settings_display" />
+		
+    <!-- Buttons -->
+    <header
+        android:icon="@drawable/ic_settings_buttons"
+        android:title="@string/button_settings">
+    	<intent android:targetPackage="com.cyanogenmod.settings"
+        android:targetClass="com.cyanogenmod.settings.Settings$ButtonSettingsActivity"/>   
+    </header>
+		
+    <!-- Storage -->
+    <header 
+		android:id="@id/storage_settings" 
+		android:title="@string/storage_settings" 
+		android:fragment="com.android.settings.deviceinfo.Memory" 
+		android:icon="@drawable/ic_settings_storage" />
+		
+    <!-- Battery -->
+    <header
+        android:id="@id/battery_settings"
+        android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
+        android:icon="@drawable/ic_settings_battery"
+        android:title="@string/power_usage_summary_title" />
+		
+    <!-- Application Settings -->
+	<header 
+		android:id="@id/application_settings" 
+		android:title="@string/applications_settings" 
+		android:fragment="com.android.settings.applications.ManageApplications" 
+		android:icon="@drawable/ic_settings_applications"/>
+		
+    <!-- Manage users -->
+    <header 
+		android:id="@id/user_settings" 
+		android:title="@string/user_settings_title" 
+		android:fragment="com.android.settings.users.UserSettings" 
+		android:icon="@drawable/ic_settings_multiuser" />
+		
+    <!-- PERSONAL -->
+    <header android:title="@string/header_category_personal" />
+		
+    <!-- Location -->
+    <header 
+		android:id="@id/location_settings" 
+		android:title="@string/location_settings_title" 
+		android:fragment="com.android.settings.location.LocationSettings" 
+		android:icon="@drawable/ic_settings_location" />
+		
+    <!-- Security -->
+    <header 
+		android:id="@id/security_settings" 
+		android:title="@string/security_settings_title" 
+		android:fragment="com.android.settings.SecuritySettings" 
+		android:icon="@drawable/ic_settings_security" />
+		
+    <!-- Language -->
+    <header 
+		android:id="@id/language_settings" 
+		android:title="@string/language_settings" android:fragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings" 
+		android:icon="@drawable/ic_settings_language" />
+		
+    <!-- Backup and reset -->
+    <header 
+		android:id="@id/privacy_settings" 
+		android:title="@string/privacy_settings" 
+		android:fragment="com.android.settings.PrivacySettings" 
+		android:icon="@drawable/ic_settings_backup" />
+		
+    <!--  ACCOUNTS section -->
+    <header 
+		android:id="@id/account_settings" 
+		android:title="@string/account_settings" />
+    <header 
+		android:id="@id/account_add" 
+		android:title="@string/add_account_label"
+		android:icon="@drawable/ic_menu_add_dark">
+        <intent android:action="android.settings.ADD_ACCOUNT_SETTINGS" />
+    </header>
+		
+    <!-- SYSTEM -->
+    <header
+		android:id="@id/system_section"
+		android:title="@string/header_category_system" />
+		
+    <!-- Date & Time -->
+    <header 
+		android:id="@id/date_time_settings" 
+		android:title="@string/date_and_time_settings_title" 
+		android:fragment="com.android.settings.DateTimeSettings" 
+		android:icon="@drawable/ic_settings_date_time" />
+		
+    <!-- Accessibility feedback -->
+    <header 
+		android:id="@id/accessibility_settings" 
+		android:title="@string/accessibility_settings" 
+		android:icon="@drawable/ic_settings_accessibility"
+		android:fragment="com.android.settings.accessibility.AccessibilitySettings" />
+		
+    <!-- Development -->
+    <header 
+		android:id="@id/development_settings" 
+		android:title="@string/development_settings_title" 
+		android:fragment="com.android.settings.DevelopmentSettings" 
+		android:icon="@drawable/ic_settings_development" />
+		
+    <!-- Superuser -->
+    <header
+        android:icon="@drawable/ic_action_permission"
+        android:title="@string/superuser">
+        <intent android:targetPackage="com.koushikdutta.superuser"
+        android:targetClass="com.koushikdutta.superuser.MainActivity" />   
+    </header>
+	
+	<!-- Power Schedule -->
+    <header 
+		android:id="@id/power_settings" 
+		android:title="@string/schedule_power_on_off_settings_title"
+		android:icon="@drawable/ic_settings_schpwronoff">
+        <intent android:action="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING" />
+    </header>
+        
+    <!-- Performance -->
+    <header
+        android:icon="@drawable/ic_settings_performance"
+        android:title="@string/performance_settings_title">
+    	<intent android:targetPackage="com.cyanogenmod.settings"
+        android:targetClass="com.cyanogenmod.settings.Settings$PerformanceSettingsActivity" />   
+    </header>
+
+    <!-- About Device -->
+    <header 
+		android:id="@id/about_settings" 
+		android:title="@string/about_settings" 
+		android:fragment="com.android.settings.DeviceInfoSettings" 
+		android:icon="@drawable/ic_settings_about" />
+	
+    <!--
+	<header 
+		android:id="@id/call_settings" 
+		android:title="@string/call_settings_title"
+		android:icon="@drawable/empty_icon">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.mediatek.settings.CallSettings" />
+    </header>
+    <header 
+		android:id="@id/notification_settings" 
+		android:title="@string/notification_settings_title">
+        <intent android:targetPackage="com.android.systemui" android:action="android.intent.action.MAIN" android:targetClass="com.android.systemui.lenovo.settings.NotificationSettings" />
+    </header>
+    <header 
+		android:id="@id/theme" 
+		android:title="@string/theme_settings_title">
+        <intent android:action="com.lenovo.launcher.action.THEME_SETTING" />
+    </header>
+	-->
+
+</preference-headers>

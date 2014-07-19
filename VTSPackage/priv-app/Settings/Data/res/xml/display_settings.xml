@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceScreen android:title="@string/light_settings" android:key="light_settings">
+        <intent android:targetPackage="com.lenovo.lightsettings" android:action="android.intent.action.MAIN" android:targetClass="com.lenovo.lightsettings.LightSettings" />
+    </PreferenceScreen>
+    <com.android.settings.BrightnessPreference android:persistent="false" android:title="@string/brightness" />
+    <ListPreference android:persistent="false" android:entries="@array/entries_smart_rotation" android:title="@string/smart_rotete_cbox_title" android:key="smart_rotation" android:summary="@string/smart_rotete_cbox_summary" android:entryValues="@array/entryvalues_smart_rotation" />
+    <Preference android:title="@string/teos_settings" android:key="teos_settings" />
+    <PreferenceScreen android:title="@string/wallpaper_settings_title" android:key="wallpaper" android:fragment="com.android.settings.WallpaperTypeSettings" />
+    <CheckBoxPreference android:title="@string/accelerometer_title" android:key="accelerometer" />
+    <ListPreference android:persistent="false" android:entries="@array/screen_timeout_entries" android:title="@string/screen_timeout" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:entryValues="@array/screen_timeout_values" />
+    <PreferenceScreen android:title="@string/screensaver_settings_title" android:key="screensaver" android:fragment="com.android.settings.DreamSettings" />
+    <com.android.settings.WarnedListPreference android:entries="@array/entries_font_size" android:title="@string/title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+    <ListPreference android:entries="@array/entries_button_brightness" android:title="@string/button_brightness" android:key="button_brightness" android:summary="@string/summary_button_brightness" android:defaultValue="auto" android:dialogTitle="@string/dialog_title_button_brightness" android:entryValues="@array/entryvalues_button_brightness" />
+    <com.android.settings.tabsettings.EnhanceSwitchPreference android:title="@string/title_lcd_invert" android:key="lcd_invert" android:layout="@layout/preference" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" />
+    <PreferenceScreen android:title="@string/wifi_display_settings_title" android:key="wifi_display" android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
+</PreferenceScreen>

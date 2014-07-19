@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<packages>
+<package name="com.lenovo.xlauncher" iszip="true" file="/system/etc/.LenovoTheme/themesuite/243/content/launcher/content/res.zip"/>
+
+<package name="com.lenovo.launcher.launcherextend" iszip="true" file="/system/etc/.LenovoTheme/themesuite/243/content/launcher/content/res.zip"/>
+
+<!--
+<package name="com.android.phone" iszip="true" file="/system/etc/.LenovoTheme/themesuite/243/content/callscreen/content/res.zip"/>
+
+<package name="com.lenovo.ideafriend" iszip="true" file="/system/etc/.LenovoTheme/themesuite/243/content/ideafriend/content/res.zip"/>
+
+<package name="com.lenovo.lewea" iszip="true" file="/system/etc/.LenovoTheme/themesuite/243/content/launcher/content/res.zip"/>
+
+<package name="com.android.systemui" iszip="true" file="/system/etc/.LenovoTheme/themesuite/243/content/systemui/content/res.zip"/>
+
+<package name="lenovo" iszip="true" file="/system/etc/.LenovoTheme/themesuite/243/content/systemwidget/content/res.zip"/>
+-->
+</packages>
+
+<config>
+<category name="themesuite" defResId="243"/>
+<category name="launcher" defResId="243"/>
+<category name="bootshut" defResId="253"/>
+<category name="systemwidget" defResId="0"/>
+<category name="ideafriend" defResId="0"/>
+<category name="systemui" defResId="0"/>
+<category name="callscreen" defResId="0"/>
+<category name="lockscreen" defResId="243"/>
+<category name="systemanim" defResId="0"/>
+</config>

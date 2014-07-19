@@ -1,0 +1,9 @@
+﻿{
+"is_gemini":false,
+"zero_data":true,
+"top_imgs":"top1.png,top2.png,top3.png",
+"top_bg":"top_bg.jpg",
+"use_top_imgs_bg":false,
+"lenovo_id":false,
+"lenovo_exp":true
+}

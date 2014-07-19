@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="info_label">
+        <item name="android:textAppearance">@style/TextAppearance.info_label</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingEnd">4.0dip</item>
+    </style>
+    <style name="info_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingStart">10.0dip</item>
+        <item name="android:paddingEnd">10.0dip</item>
+    </style>
+    <style name="entry_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance" parent="@android:style/TextAppearance" />
+    <style name="TextAppearance.info_label" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="InCallButton">
+        <item name="android:background">@drawable/incall_btn_background</item>
+        <item name="android:layout_width">180.0dip</item>
+        <item name="android:layout_height">88.0dip</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+    <style name="InCallCompoundButton" parent="@style/InCallButton">
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+    </style>
+    <style name="VerticalSeparator">
+        <item name="android:background">@drawable/vertical_separator</item>
+        <item name="android:layout_width">8.0dip</item>
+        <item name="android:layout_height">18.0dip</item>
+    </style>
+    <style name="InCallEndButton">
+        <item name="android:background">@drawable/endcall_background</item>
+        <item name="android:layout_width">241.0dip</item>
+        <item name="android:layout_height">46.0dip</item>
+    </style>
+    <style name="InCallExtraRowButton">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/extra_row_button_width</item>
+        <item name="android:layout_height">@dimen/extra_row_button_height</item>
+    </style>
+    <style name="InCallExtraRowButtonLabel">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/incall_call_main_text_color</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginStart">5.0dip</item>
+        <item name="android:layout_marginEnd">5.0dip</item>
+    </style>
+    <style name="InCallAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:taskOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/activity_open_exit</item>
+    </style>
+    <style name="Theme.InCallScreen" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="DialpadButtonStyle">
+        <item name="android:background">@drawable/dialpad_button_background</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    <style name="DialtactsDigitsTextAppearance">
+        <item name="android:textSize">@dimen/dialpad_digits_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:editable">true</item>
+        <item name="android:freezesText">true</item>
+    </style>
+    <style name="PrimaryCallInfoPrimaryCallBanner">
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="PrimaryCallInfoSupplementaryInfoContainer">
+        <item name="android:layout_below">@id/primary_call_banner</item>
+    </style>
+    <style name="SecondaryCallInfoSecondaryCallName">
+        <item name="android:layout_gravity">top|left|center</item>
+    </style>
+    <style name="SecondaryCallInfoSecondaryCallStatus">
+        <item name="android:layout_gravity">top|right|center</item>
+    </style>
+    <style name="InCallVTButton">
+        <item name="android:background">@drawable/incall_btn_vt</item>
+        <item name="android:layout_width">@dimen/vt_incall_screen_button_width</item>
+        <item name="android:layout_height">@dimen/vt_incall_screen_button_height</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+    <style name="ActivityDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_ota-update-centre_asp" default="compile.module.ota-update-centre_asp">
+  <dirname property="module.ota-update-centre_asp.basedir" file="${ant.file.module_ota-update-centre_asp}"/>
+  
+  <property name="module.jdk.home.ota-update-centre_asp" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.ota-update-centre_asp" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.ota-update-centre_asp" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.ota-update-centre_asp" value="${compiler.args}"/>
+  
+  <property name="ota-update-centre_asp.output.dir" value="${module.ota-update-centre_asp.basedir}/out/production/ota-update-centre_asp"/>
+  <property name="ota-update-centre_asp.testoutput.dir" value="${module.ota-update-centre_asp.basedir}/out/test/ota-update-centre_asp"/>
+  
+  <path id="ota-update-centre_asp.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="ota-update-centre_asp.module.production.classpath">
+    <path refid="${module.jdk.classpath.ota-update-centre_asp}"/>
+    <path refid="library.gcm.classpath"/>
+  </path>
+  
+  <path id="ota-update-centre_asp.runtime.production.module.classpath">
+    <pathelement location="${ota-update-centre_asp.output.dir}"/>
+    <path refid="library.gcm.classpath"/>
+  </path>
+  
+  <path id="ota-update-centre_asp.module.classpath">
+    <path refid="${module.jdk.classpath.ota-update-centre_asp}"/>
+    <pathelement location="${ota-update-centre_asp.output.dir}"/>
+    <path refid="library.gcm.classpath"/>
+  </path>
+  
+  <path id="ota-update-centre_asp.runtime.module.classpath">
+    <pathelement location="${ota-update-centre_asp.testoutput.dir}"/>
+    <pathelement location="${ota-update-centre_asp.output.dir}"/>
+    <path refid="library.gcm.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.ota-update-centre_asp">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.ota-update-centre_asp">
+    <patternset refid="excluded.from.module.ota-update-centre_asp"/>
+  </patternset>
+  
+  <path id="ota-update-centre_asp.module.sourcepath">
+    <dirset dir="${module.ota-update-centre_asp.basedir}">
+      <include name="src"/>
+      <include name="gen"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.ota-update-centre_asp" depends="compile.module.ota-update-centre_asp.production,compile.module.ota-update-centre_asp.tests" description="Compile module ota-update-centre_asp"/>
+  
+  <target name="compile.module.ota-update-centre_asp.production" depends="register.custom.compilers" description="Compile module ota-update-centre_asp; production classes">
+    <mkdir dir="${ota-update-centre_asp.output.dir}"/>
+    <javac2 destdir="${ota-update-centre_asp.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.ota-update-centre_asp}/javac">
+      <compilerarg line="${compiler.args.ota-update-centre_asp}"/>
+      <bootclasspath refid="ota-update-centre_asp.module.bootclasspath"/>
+      <classpath refid="ota-update-centre_asp.module.production.classpath"/>
+      <src refid="ota-update-centre_asp.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.ota-update-centre_asp"/>
+    </javac2>
+    
+    <copy todir="${ota-update-centre_asp.output.dir}">
+      <fileset dir="${module.ota-update-centre_asp.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.ota-update-centre_asp.basedir}/gen">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.ota-update-centre_asp.tests" depends="register.custom.compilers,compile.module.ota-update-centre_asp.production" description="compile module ota-update-centre_asp; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.ota-update-centre_asp" description="cleanup module">
+    <delete dir="${ota-update-centre_asp.output.dir}"/>
+    <delete dir="${ota-update-centre_asp.testoutput.dir}"/>
+  </target>
+</project>

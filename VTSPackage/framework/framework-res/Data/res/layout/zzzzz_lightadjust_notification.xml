@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/zzzzz_lightadjust_decrease_image" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/center_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/zzzzz_lightadjust_title" android:background="#88858585" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:textAlignment="center" />
+        <RelativeLayout android:orientation="horizontal" android:background="#88606060" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageButton android:id="@id/zzzzz_lightadjust_image_refresh" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" />
+            <ImageButton android:id="@id/zzzzz_lightadjust_image_profile" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <ImageButton android:id="@id/zzzzz_lightadjust_image_lock" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/zzzzz_lightadjust_increase_image" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

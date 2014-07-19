@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/regist_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:id="@id/register_text_register" android:text="@string/com_lenovo_lsf_register_string_register" android:layout_alignParentRight="true" style="@style/com_lenovo_lsf_head_text" />
+            <TextView android:textSize="24.0sp" android:textColor="#ff878787" android:id="@id/register_text_login" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/com_lenovo_lsf_register_string_login" android:layout_alignBaseline="@id/register_text_register" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="#ff0091cf" android:id="@id/register_text_haveid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/com_lenovo_lsf_register_string_haveid" android:layout_toRightOf="@id/register_text_login" android:layout_alignBaseline="@id/register_text_register" style="@style/com_lenovo_lsf_text_size_small" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" android:layout_weight="1.0" />
+                <View android:background="#ff0091cf" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:layout_gravity="center_horizontal" android:background="#ff0091cf" android:layout_width="fill_parent" android:layout_height="2.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/com_lenovo_lsf_layout_location">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/com_lenovo_lsf_register_string_registerinfo" style="@style/com_lenovo_lsf_text_size_small" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/login_layout_error" android:paddingTop="10.0dip" style="@style/com_lenovo_lsf_layout_loc" />
+        <LinearLayout android:gravity="center" android:paddingTop="0.0dip" style="@style/com_lenovo_lsf_layout_loc">
+            <RelativeLayout style="@style/com_lenovo_lsf_input_area">
+                <TextView android:id="@id/register_text_account" android:text="@string/com_lenovo_lsf_register_string_account" style="@style/com_lenovo_lsf_input_text" />
+                <EditText android:id="@id/register_edit_account" android:hint="@string/com_lenovo_lsf_register_string_accounthint" android:layout_toRightOf="@id/register_text_account" style="@style/com_lenovo_lsf_input_edit" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/com_lenovo_lsf_input_area">
+                <TextView android:id="@id/register_text_setpwd" android:text="@string/com_lenovo_lsf_register_string_setpwd" style="@style/com_lenovo_lsf_input_text" />
+                <EditText android:id="@id/register_edit_setpwd" android:hint="@string/com_lenovo_lsf_register_string_setpwdhint" android:maxLength="20" android:layout_toRightOf="@id/register_text_setpwd" android:inputType="textPassword" style="@style/com_lenovo_lsf_input_edit" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/com_lenovo_lsf_input_area">
+                <TextView android:id="@id/register_text_confirmpwd" android:text="@string/com_lenovo_lsf_register_string_confirmpwd" style="@style/com_lenovo_lsf_input_text" />
+                <EditText android:id="@id/register_edit_confirmpwd" android:hint="@string/com_lenovo_lsf_register_string_confirmpwd_hint" android:maxLength="20" android:layout_toRightOf="@id/register_text_confirmpwd" android:inputType="textPassword" style="@style/com_lenovo_lsf_input_edit" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/com_lenovo_lsf_input_area">
+                <TextView android:id="@id/register_text_verifycode" android:text="@string/com_lenovo_lsf_register_string_verifycode" style="@style/com_lenovo_lsf_input_text" />
+                <EditText android:id="@id/register_edit_verifycode" android:hint="@string/com_lenovo_lsf_register_string_verifycodehint" android:layout_toRightOf="@id/register_text_verifycode" android:inputType="number" style="@style/com_lenovo_lsf_input_edit" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/register_layout_verify" android:paddingTop="10.0dip" style="@style/com_lenovo_lsf_layout_loc">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/register_image_verify" android:layout_width="134.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" />
+                <ImageButton android:id="@id/register_button_changeanother" android:background="@drawable/APKTOOL_DUMMY_0030" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_toRightOf="@id/register_image_verify" android:layout_centerVertical="true" style="@style/com_lenovo_lsf_button_style" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="16.0dip" style="@style/com_lenovo_lsf_bottom">
+            <Button android:id="@id/register_button_register" android:text="@string/com_lenovo_lsf_register_string_register" style="@style/com_lenovo_lsf_button_style" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                <ImageView android:id="@id/register_image_frame" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff0091cf" android:id="@id/register_text_protocol" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/com_lenovo_lsf_register_string_protocol" style="@style/com_lenovo_lsf_text_size_middle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

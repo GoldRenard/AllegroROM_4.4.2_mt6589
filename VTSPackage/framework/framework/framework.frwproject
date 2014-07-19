@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtuousTenProject>
+  <Settings>
+    <Setting Name="binaryname" Value="framework.jar" />
+    <Setting Name="version" Value="4" />
+    <Setting Name="hassuccessfulimport" Value="True" />
+    <Setting Name="activeconfiguration" Value="Advanced code editing" />
+  </Settings>
+  <OpenDocuments />
+  <MarkedLines />
+  <ScriptConfigurations>
+    <ScriptConfiguration ConfigurationName="Advanced code editing" Description="Disassembles classes.dex and generates java sources. Might take considerably longer than the basic configuration without java sources." Type="Framework" ID="6F101009-7CDD-4730-9825-FF3DD8E87A14" SortOrder="2">
+      <Import SyncWith="Build, GenerateJava">
+        <VariableModule Name="TmpImportDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <UnzipModule ZipFile="$(ImportBinaryPath)" OutputDirectory="$(TmpImportDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <BakSmaliModule DexFileDirectory="$(TmpImportDir)" APILevel="Kitkat" AdditionalCommandlineFlags="$(DefaultBakSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <BackupOriginalDataModule BinaryPath="$(ImportBinaryPath)" BackupDirectory="$(MiscDirectory)\Original files" IsEssential="false" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(ImportBinaryPath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="None" IsEssential="false" IsEnabled="true" />
+        <!---->
+        <CleanupModule TargetDirectory="$(DataDirectory)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(TmpImportDir)" TargetDirectory="$(DataDirectory)" IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Import>
+      <Build>
+        <VariableModule Name="TmpBuildDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(DataDirectory)" TargetDirectory="$(TmpBuildDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SmaliModule SmaliFilesDirectory="$(TmpBuildDir)\smali" DexFileDirectory="$(TmpBuildDir)" APILevel="Kitkat" AdditionalCommandlineFlags="$(DefaultSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <VariableModule Name="BinaryFilePath" Value="$(BinaryDirectory)\$(BinaryName)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ZipModule InputDirectory="$(TmpBuildDir)" OutputZipFile="$(BinaryFilePath)" CompressionLevel="0" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SignModule TargetFile="$(BinaryFilePath)" SignType="KeepOldSignature" CustomSignCert="" CustomSignKey="" IsEssential="true" IsEnabled="false" />
+        <!---->
+        <ZipalignModule TargetFile="$(BinaryFilePath)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(BinaryFilePath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="None" IsEssential="false" IsEnabled="true" />
+        <!---->
+      </Build>
+      <Push>
+        <VariableModule Name="FileToPush" Value="$(BinaryDirectory)\$(BinaryName)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CheckForUnbuildChangesModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <VerifyUnsecureBootImageModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <ADBRemountModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <ADBTransferModule TransferMethod="Push" FilePath="$(FileToPush)" PushPath="/system/framework/" IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Push>
+      <GenerateJava>
+        <VariableModule Name="TmpBuildDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(DataDirectory)" TargetDirectory="$(TmpBuildDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SmaliModule SmaliFilesDirectory="$(TmpBuildDir)\smali" DexFileDirectory="$(TmpBuildDir)" APILevel="Kitkat" AdditionalCommandlineFlags="$(DefaultSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <VariableModule Name="BinaryFilePath" Value="$(NewTmpPath())\tmp.bin" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ZipModule InputDirectory="$(TmpBuildDir)" OutputZipFile="$(BinaryFilePath)" CompressionLevel="0" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(BinaryFilePath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="None" IsEssential="false" IsEnabled="true" />
+        <!---->
+      </GenerateJava>
+    </ScriptConfiguration>
+  </ScriptConfigurations>
+</VirtuousTenProject>

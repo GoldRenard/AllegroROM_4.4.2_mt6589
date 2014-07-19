@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="call_banner_height">@dimen/in_call_end_button_height</item>
+    <dimen name="call_banner_side_padding">4.0dip</dimen>
+    <dimen name="call_banner_top_bottom_padding">0.0dip</dimen>
+    <dimen name="in_call_button_height">114.0px</dimen>
+    <dimen name="in_call_end_button_height">114.0px</dimen>
+    <dimen name="button_cluster_side_padding">0.0dip</dimen>
+    <dimen name="emergency_dialer_digits_height">66.0dip</dimen>
+    <dimen name="incoming_call_widget_circle_size">94.0dip</dimen>
+    <dimen name="incoming_call_widget_asset_margin">28.0dip</dimen>
+    <dimen name="glowpadview_outerring_diameter">560.0dip</dimen>
+    <dimen name="glowpadview_target_placement_radius">280.0dip</dimen>
+    <dimen name="glowpadview_glow_radius">75.0dip</dimen>
+    <dimen name="glowpadview_snap_margin">40.0dip</dimen>
+    <dimen name="glowpadview_inner_radius">15.0dip</dimen>
+    <dimen name="glowpadview_margin_bottom">0.0dip</dimen>
+    <dimen name="glowpadview_margin_right">0.0dip</dimen>
+    <dimen name="call_state_label_height">16.0dip</dimen>
+    <dimen name="call_banner_text_size">18.0sp</dimen>
+    <dimen name="call_banner_small_text_size">7.0dip</dimen>
+    <dimen name="call_banner_sim_indicator_padding">2.0dip</dimen>
+    <dimen name="call_banner_sim_indicator_padding_left">7.0dip</dimen>
+    <dimen name="call_banner_sim_indicator_padding_right">4.0dip</dimen>
+    <dimen name="dialpad_vertical_margin_dtmf">0.0px</dimen>
+    <dimen name="in_call_button_width">194.0px</dimen>
+    <dimen name="call_banner_name_text_size">30.0sp</dimen>
+    <dimen name="dtmf_dialpad_vertical_margin_top">100.0px</dimen>
+    <dimen name="dtmf_digits_text_height">119.0px</dimen>
+    <dimen name="name_label_number_padding_bottom">1.0px</dimen>
+    <dimen name="dtmf_dialpad_table_height">477.0px</dimen>
+    <dimen name="in_call_call_banner_height">173.0px</dimen>
+    <dimen name="callstate_title_height">119.0px</dimen>
+    <dimen name="call_photo_width_lan">297.0px</dimen>
+    <dimen name="call_photo_height_lan">297.0px</dimen>
+</resources>

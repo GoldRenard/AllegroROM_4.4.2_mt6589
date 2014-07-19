@@ -1,4 +1,4 @@
-AllegroROM_4.4.2_mt6589
-=======================
+Lenovo Vibe X AllegroROM v2 Kitchen (Android 4.4.2)
+=======================================================
 
-VibeUI1.5 AOSPmization project with a bunch of CM features (Lenovo Vibe X)
+AllegroROM is global modification of VibeUI 1.5. The goal of this project is creating an AOSP-like firmware with some CyanogenMod features.

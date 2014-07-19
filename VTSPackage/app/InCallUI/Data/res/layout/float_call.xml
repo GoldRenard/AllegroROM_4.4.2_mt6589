@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/incall_screen_in_navigator_linear" android:background="@drawable/float_call_bg" android:layout_width="fill_parent" android:layout_height="141.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/float_photo" android:layout_width="127.0px" android:layout_height="127.0px" android:src="@null" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="480.0px" android:layout_height="fill_parent">
+        <TextView android:textSize="67.0px" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/float_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="40.0px" android:textColor="#ff65b412" android:id="@id/callstate_float" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_title_in_call" />
+            <TextView android:textSize="40.0px" android:textColor="#ff65b412" android:id="@id/float_calltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" />
+        </LinearLayout>
+>
+</RelativeLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/endButtonArea" android:layout_width="433.0px" android:layout_height="127.0px">
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@id/endButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_end_call" android:contentDescription="@string/onscreenEndCallText" style="@style/InCallEndButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/backtocall_linear" android:background="@drawable/gotocall_cg" android:layout_width="200.0px" android:layout_height="113.0px" android:layout_marginLeft="13.0px">
+        <ImageButton android:layout_gravity="center" android:id="@id/backcall" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_call" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

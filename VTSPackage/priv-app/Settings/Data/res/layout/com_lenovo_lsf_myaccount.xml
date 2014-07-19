@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/view_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout style="@style/com_lenovo_lsf_layout_loc">
+                <TextView android:id="@id/myaccount_text_myaccount" android:text="@string/com_lenovo_lsf_myaccount_string_myaccount" style="@style/com_lenovo_lsf_head_text" />
+            </LinearLayout>
+            <LinearLayout android:paddingLeft="0.0dip" android:paddingRight="0.0dip" style="@style/com_lenovo_lsf_layout_loc">
+                <ImageView android:id="@id/myaccount_image_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_0040" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout style="@style/com_lenovo_lsf_layout_loc">
+                <RelativeLayout style="@style/com_lenovo_lsf_myaccount_relative">
+                    <TextView android:id="@id/myaccount_text_account" android:text="@string/com_lenovo_lsf_myaccount_string_account" style="@style/com_lenovo_lsf_text_middle" />
+                    <TextView android:id="@id/myaccount_text_accountinfo" android:layout_marginLeft="10.0dip" android:text="@string/com_lenovo_lsf_myaccount_string_accountinfo" android:layout_toRightOf="@id/myaccount_text_account" android:layout_alignBaseline="@id/myaccount_text_account" style="@style/com_lenovo_lsf_text_middle" />
+                </RelativeLayout>
+                <RelativeLayout style="@style/com_lenovo_lsf_myaccount_relative">
+                    <Button android:id="@id/myaccount_button_verify" android:text="@string/com_lenovo_lsf_myaccount_string_verify" android:layout_alignParentRight="true" style="@style/com_lenovo_lsf_button_small_style" />
+                    <TextView android:id="@id/myaccount_text_status" android:text="@string/com_lenovo_lsf_myaccount_string_status" android:layout_alignBaseline="@id/myaccount_button_verify" style="@style/com_lenovo_lsf_text_middle" />
+                    <TextView android:id="@id/myaccount_text_statusinfo" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/myaccount_text_status" android:layout_alignBaseline="@id/myaccount_button_verify" style="@style/com_lenovo_lsf_text_middle" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/myaccount_layout_changepassword" style="@style/com_lenovo_lsf_myaccount_relative">
+                    <Button android:id="@id/myaccount_button_setpassword" android:layout_alignParentRight="true" style="@style/com_lenovo_lsf_button_small_style" />
+                    <TextView android:id="@id/myaccount_text_password" android:text="@string/com_lenovo_lsf_myaccount_string_password" android:layout_alignBaseline="@id/myaccount_button_setpassword" style="@style/com_lenovo_lsf_text_middle" />
+                    <TextView android:id="@id/myaccount_text_passwordinfo" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/myaccount_text_password" android:layout_alignBaseline="@id/myaccount_button_setpassword" style="@style/com_lenovo_lsf_text_middle" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/com_lenovo_lsf_layout_loc">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/myaccount_text_time" android:text="@string/com_lenovo_lsf_myaccount_string_time" style="@style/com_lenovo_lsf_text_middle" />
+                    <TextView android:id="@id/myaccount_text_timeinfo" android:layout_marginLeft="10.0dip" android:text="@string/com_lenovo_lsf_myaccount_string_timeinfo" style="@style/com_lenovo_lsf_text_middle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/logout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/com_lenovo_lsf_myaccount_string_logout" />
+    </RelativeLayout>
+</RelativeLayout>

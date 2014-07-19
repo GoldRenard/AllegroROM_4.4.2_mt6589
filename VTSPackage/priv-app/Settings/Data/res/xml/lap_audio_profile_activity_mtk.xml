@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/audio_profile_category_checked_title" android:key="Check_mode">
+        <com.android.settings.audioprofile.AudioProfilecheckPreference android:key="profile_checked_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/audio_profile_category_setting_title" android:key="edit_profile_setting">
+        <Preference android:title="@string/audio_profile_general_title" android:key="mtk_audioprofile_general" android:summary="@string/audio_profile_general_summary" />
+        <Preference android:title="@string/audio_profile_silent_title" android:key="mtk_audioprofile_silent" android:summary="@string/audio_profile_silent_summary" />
+        <Preference android:title="@string/audio_profile_meeting_title" android:key="mtk_audioprofile_meeting" android:summary="@string/audio_profile_meeting_summary" />
+        <Preference android:title="@string/audio_profile_outdoor_title" android:key="mtk_audioprofile_outdoor" android:summary="@string/audio_profile_outdoor_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>
